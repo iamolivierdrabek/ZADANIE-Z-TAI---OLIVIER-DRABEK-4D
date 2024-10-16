@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skaczący Ludzik - Gra</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #game {
+            position: relative;
+            width: 500px;
+            height: 200px;
+            border: 2px solid #333;
+            overflow: hidden;
+            background-color: #eee;
+        }
+        #player {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: #4CAF50;
+        }
+        #obstacle {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-color: #ff3333;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <div id="player"></div>
+        <div id="obstacle"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
