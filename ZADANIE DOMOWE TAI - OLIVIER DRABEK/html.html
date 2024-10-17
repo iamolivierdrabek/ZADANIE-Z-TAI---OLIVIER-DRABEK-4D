@@ -34,12 +34,11 @@
             height: 50px;
             background-color: #4CAF50;
         }
-        #obstacle {
+        .obstacle {
             position: absolute;
             bottom: 0;
-            right: 0;
-            width: 50px;
-            height: 50px;
+            width: 30px; /* Pomniejszona szerokość */
+            height: 30px; /* Pomniejszona wysokość */
             background-color: #ff3333;
         }
     </style>
@@ -47,9 +46,9 @@
 <body>
     <div id="game">
         <div id="player"></div>
-        <div id="obstacle"></div>
     </div>
 
+    <!-- Ładowanie jQuery i pliku game.js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="game.js"></script>
 </body>
